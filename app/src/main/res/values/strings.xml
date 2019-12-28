@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FootballScoreKeeper</string>
+    <string name="extra_button_text">extra point</string>
+    <string name="reset_button_text">reset</string>
+    <string name="safety_button_text">+2 points</string>
+    <string name="fieldgoal_button_text">+3 points</string>
+    <string name="touchdown_button_text">+ 6points</string>
+    <string name="initial_score">0</string>
+    <string name="team_a_title">Team A</string>
+    <string name="team_b_title">Team B</string>
+</resources>

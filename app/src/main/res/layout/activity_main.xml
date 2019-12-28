@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/comici"
+                android:padding="25dp"
+                android:text="@string/team_a_title"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/score_team_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/comici"
+                android:padding="30dp"
+                android:text="@string/initial_score"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_touchdown_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:fontFamily="@font/comici"
+                android:onClick="updateTeamAScore"
+                android:text="@string/touchdown_button_text"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/btn_fieldgoal_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:fontFamily="@font/comici"
+                android:onClick="updateTeamAScore"
+                android:text="@string/fieldgoal_button_text"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/btn_safety_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:fontFamily="@font/comici"
+                android:onClick="updateTeamAScore"
+                android:text="@string/safety_button_text"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/btn_extra_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:fontFamily="@font/comici"
+                android:onClick="updateTeamAScore"
+                android:text="@string/extra_button_text"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/comici"
+                android:padding="25dp"
+                android:text="@string/team_b_title"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/score_team_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/comici"
+                android:padding="30dp"
+                android:text="@string/initial_score"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_touchdown_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:fontFamily="@font/comici"
+                android:onClick="updateTeamBScore"
+                android:text="@string/touchdown_button_text"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/btn_fieldgoal_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:fontFamily="@font/comici"
+                android:onClick="updateTeamBScore"
+                android:text="@string/fieldgoal_button_text"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/btn_safety_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:fontFamily="@font/comici"
+                android:onClick="updateTeamBScore"
+                android:text="@string/safety_button_text"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/btn_extra_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:fontFamily="@font/comici"
+                android:onClick="updateTeamBScore"
+                android:text="@string/extra_button_text"
+                android:textAllCaps="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:fontFamily="@font/comici"
+        android:onClick="resetScores"
+        android:text="@string/reset_button_text"
+        android:textAllCaps="true" />
+</RelativeLayout>
